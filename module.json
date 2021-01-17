@@ -7,10 +7,6 @@
   "systems": [
       "starwarsffg"
   ],
-  "scripts": [
-      "swffg.js",
-      "initialization.js"
-  ],
   "styles": ["css/swffg.css"],
   "packs": [],
   "languages": [
