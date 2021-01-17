@@ -1,0 +1,80 @@
+<form class="{{cssClass}} item-sheet-specialization" autocomplete="off">
+  <header class="sheet-header">
+    <div class="header-fields">
+      <div class="talent-background talent-block">
+        <div class="talent-header">
+          <div></div>
+          <div class="talent-name"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SWFFG.Specialization'}}" /></div>
+        </div>
+        <div class="talent-body">
+          <div class="popout-editor" data-target="data.description" data-label="{{item.name}}">
+            <div class="popout-editor-button"><i class="fas fa-edit"></i></div>
+            {{{ffgDiceSymbols data.description}}}
+          </div>
+        </div>
+        <div class="talent-actions {{#if data.isReadOnly}}talent-hidden{{/if}}">
+          <a class="talent-action hover" data-itemid="{{item._id}}"
+            ><i class="fas fa-cog"></i>
+            <div class="tooltip">Modifiers</div>
+          </a>
+          <a class="talent-action" data-action="edit"><i class="fas fa-edit"></i></a>
+          <input class="talent-hidden" name="data.isEditing" type="text" value="{{data.isEditing}}" data-dtype="Boolean" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <div class="talent-grid {{#if data.isEditing}}{{else}}talent-disable-edit{{/if}}">
+      {{#each data.talents as |talent key|}}
+
+      <div class="talent-block talent-upgrade talent-single specialization-talent" id="{{key}}" data-itemid="{{talent.itemId}}">
+        <div class="talent-background {{#iff talent.activationLabel 'contains' 'Passive'}}talent-passive{{else}}talent-active{{/iff}}">
+          <div class="talent-header">
+            <div>
+              {{#if talent.isForceTalent}}
+              <div class="burst-8"></div>
+              {{/if}} <input type="checkbox" class="{{#if talent.isConflictTalent}}conflict{{/if}}" name="data.talents.{{key}}.islearned" data-dtype="Boolean" {{#if talent.islearned }}checked{{else}} {{/if}}> {{#if talent.isConflictTalent}}
+              <div class="conflict"></div>
+              {{/if}}
+            </div>
+            <div class="talent-name {{#if (ne talent.name '')}}talent-modifiers{{/if}}">{{{talent.name}}} <span>COST: {{calculateSpecializationTalentCost key}}</span></div>
+          </div>
+          <div class="talent-body">
+            <input type="text" name="data.talents.{{key}}.activationLabel" value="{{localize talent.activationLabel}}" disabled />
+            {{{ffgDiceSymbols talent.description}}}
+            <div class="talent-hidden">
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.name" value="{{talent.name}}" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.description" value="{{talent.description}}" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.activation" value="{{talent.activation}}" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.itemId" value="{{talent.itemId}}" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.isRanked" value="{{talent.isRanked}}" data-dtype="Boolean" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.pack" value="{{talent.pack}}" />
+              <input class="talent-hidden" type="text" name="data.talents.{{key}}.cost" value="{{calculateSpecializationTalentCost key}}" />
+              <input class="talent-hidden" type="checkbox" name="data.talents.{{key}}.isForceTalent" data-dtype="Boolean" {{checked talent.isForceTalent}} />
+            </div>
+          </div>
+        </div>
+        <div class="talent-connections">
+          <div class="talent-connection-point-top">
+            <div class="{{#if talent.links-top-1}}talent-connector{{/if}} talent-action {{#if talent.canLinkTop}}talent-connection-point-top{{else}}talent-hidden{{/if}} talent-{{talent.size}}" data-action="link-top" data-key="{{key}}" data-linknumber="1">
+              <i class="fas fa-chevron-up"></i>
+              <div class="talent-connector-up"><i class="fas fa-chevron-down"></i></div>
+              <input class="talent-hidden" name="data.talents.{{key}}.links-top-1" type="text" value="{{talent.links-top-1}}" data-dtype="Boolean" />
+            </div>
+          </div>
+          <div class="{{#if talent.links-right}}talent-connector{{/if}} talent-action {{#if talent.canLinkRight}}talent-connection-point-right{{else}}talent-hidden{{/if}}" data-action="link-right" data-key="{{key}}">
+            <i class="fas fa-chevron-right"></i>
+            <div class="talent-connector-side"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-left"></i></div>
+            <input class="talent-hidden" name="data.talents.{{key}}.links-right" type="text" value="{{talent.links-right}}" data-dtype="Boolean" />
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="hidden-content">
+      {{> "systems/starwarsffg/templates/parts/shared/ffg-modifiers.html"}}
+    </div>
+  </section>
+</form>

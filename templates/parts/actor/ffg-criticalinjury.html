@@ -1,0 +1,32 @@
+<div class="injuries">
+  <div class="resource full">
+    <div class="attribute flex-group-center">
+      <div class="block-background">
+        <div class="block-header">
+          <div>
+            {{#if (eq type "criticaldamage")}} {{localize "SWFFG.CriticalDamage"}} {{else}} {{localize "SWFFG.CriticalInjuries"}} {{/if}}
+          </div>
+          <div class="grid grid-3col">
+            <div>{{localize "SWFFG.Result"}}</div>
+            <div>{{localize "SWFFG.Severity"}}</div>
+            <div></div>
+          </div>
+        </div>
+        <div class="block-attribute">
+          {{#each items as |item id|}} {{#if (eq item.type ../type)}}
+          <div class="grid grid-3col item" data-item-id="{{item._id}}">
+            <div class="item-name">
+              {{item.name}}
+            </div>
+            <div class="severity">{{renderMultiple item.data.severity '<img class="severity-img" src="systems/starwarsffg/images/dice/starwars/purple.png" />'}}</div>
+            <div class="item-controls">
+              <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+              <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </div>
+          {{/if}} {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
