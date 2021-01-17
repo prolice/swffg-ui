@@ -8880,24 +8880,16 @@ img {
 }
 
 .starwarsffg.v2 .tabs {
-	position: absolute;
-	width: 40px;
-	right: -40px;
-	top: 60px;
-	/*border: 1px solid black;
-	border-image: url(../ui/frames/sidebar-collapsed.png);
-	border-image-slice: 9 fill;
-	border-image-width: 9px;
-	border-image-outset: 0px 0px 0px 0px;
-	border-image-repeat: repeat;
-	border-top-left-radius: 7px;
-	border-bottom-left-radius: 7px;
-	box-shadow: -2px 0px 8px #000;*/
+	position: absolute !important;
+	width: 40px !important;
+	right: -40px !important;
+	top: 60px !important;
+	height: auto !important;
 	
-	border-image: url(../ui/frames/sidebar-collapsed.png) 5 repeat;
-    border-image-slice: 19 21 19 21 fill;
-    border-image-width: 19px 21px 21px 21px;
-    border-image-outset: 0px;
+	border-image: url(../ui/frames/sidebar-collapsed.png) 5 repeat !important;
+    border-image-slice: 19 21 19 21 fill !important;
+    border-image-width: 19px 21px 21px 21px !important;
+    border-image-outset: 0px !important;
 	
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
@@ -8905,10 +8897,10 @@ img {
 	transform: scaleX(-1);
 	filter: FlipH;
 	-ms-filter: "FlipH";
-	/*background: url(../ui/frames/sidebar-collapsed.png);*/
-	padding-bottom: 20px;
-	padding-top: 10px;
-	background-size: 40px 100%;
+	
+	padding-bottom: 20px !important;
+	padding-top: 10px !important;
+	background-size: 40px 100% !important;
 }
 
 .starwarsffg.v2 .tabs .item {
