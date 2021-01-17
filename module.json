@@ -9,6 +9,7 @@
   ],
   "styles": ["css/swffg.css"],
   "packs": [],
+  "scripts": [],
   "languages": [
     {
       "lang": "en",
