@@ -2123,7 +2123,7 @@
     padding: 1px 3px;
     margin: 0;
     border: 1px solid blue;
-    border-image: url(../ui/item-sheet-header.png) repeat;
+    /*border-image: url(../ui/item-sheet-header.png) repeat;*/
     border-image-slice: 5;
     border-image-width: 4px;
     border-image-outset: 0px;
@@ -5245,7 +5245,7 @@ font-family: var(--actor-input-font-family);
 
     .window-app.app.journal-sheet .window-content {
       background: url(../ui/frames/parchment-texture.png);
-      background-position: -43px -120px;
+      /*background-position: -43px -120px;*/
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -5260,8 +5260,8 @@ font-family: var(--actor-input-font-family);
       border: 1px solid blue;
       border-width: 10px;
       border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
-      border-image-slice: 25;
-      border-image-width: 25px;
+      border-image-slice: 35;
+      border-image-width: 35px;
       border-image-outset: 0px 0px 0px 0px;
     }
     .window-app.app.journal-sheet .window-content form {
@@ -5279,7 +5279,7 @@ font-family: var(--actor-input-font-family);
       .window-app.app.journal-sheet .window-content input[name="name"],
       .window-app.app.journal-sheet .window-content input[name="title"] {
         border: 1px solid blue;
-        border-image: url(../ui/item-sheet-header.png) repeat;
+        /*border-image: url(../ui/item-sheet-header.png) repeat;*/
         border-image-slice: 5;
         border-image-width: 4px;
         border-image-outset: 0px;
