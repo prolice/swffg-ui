@@ -224,10 +224,22 @@
     width: 100%;
   }
   
-  li.folder.collapsed .folder-header h3 {
-    text-shadow: none;
-    color: cyan;
+  li.folder.collapsed > .folder-header h3 {
+    /* text-shadow: none; */
+    /* color: cyan !important; */
     text-shadow: 1px 1px 2px black;
+	opacity:0.7;
+	color: rgba(255, 255, 255, 1);
+	cursor: url(../ui/buttons/cursor-rebel.png), auto;
+}
+
+li.folder > .folder-header h3 {
+    margin: 0;
+    line-height: 24px;
+	text-shadow: 1px 1px 2px black;
+	opacity:0.7;
+	color: rgba(0, 255, 255, 1);
+	cursor: url(../ui/buttons/cursor-rebel.png), auto;
 }
   
   .app.window-app .editor .editor-content blockquote {
@@ -3869,7 +3881,7 @@ border-image-outset: 0px !important;
       background: none;
       height: 802px !important;
       width: 800px !important;
-      box-shadow: none;
+      box-shadow: none !important;
     }
     #client-settings .window-header {
     border: none;
@@ -3920,7 +3932,7 @@ border-image-outset: 0px !important;
         flex: 2;
         line-height: 24px;
         border: 1px solid #736953a6;
-        box-shadow: 0px 0px 10px inset black;
+        /* box-shadow: 0px 0px 10px inset black; */
         background: #00a5d640;
         border-radius: 0px;
         opacity: 0.9;
