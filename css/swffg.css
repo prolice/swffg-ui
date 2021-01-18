@@ -822,7 +822,7 @@
     position: absolute;
     top: 15px;
     right: -1px;
-    padding: 19px 0px 0px 2px;
+    padding: 20px 0px 20px 18px;
     margin: 3px 0px 0px 0px;
     border: 1px solid black;
     border-image: url(../ui/frames/sidebar-collapsed.png);
@@ -983,21 +983,34 @@
 
 /* ==================== (B) SIDEBAR HEADER ==================== */
   #sidebar-tabs {
-    display: flex;
+    /*display: flex;
     flex: none;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;*/
     justify-content: space-evenly;
     position: relative;
-    top: 0px;
     left: 70px;
-    width: 453px;
+    width: 383px;
     height: 52px;
     margin: 0px;
-    padding: 0px 80px 0px 10px;
-    border: none;
+    /* padding: 0px 80px 0px 10px; */
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:18px;
+    /* border: none; */
     box-shadow: none;
-    background: url(../ui/sidebar-border.png) repeat;
+    /* background: url(../ui/sidebar-border.png) repeat; */
+	
+	flex: 0 0 45px;
+    margin: 0px;
+    border: 1px solid blue;
+    border-image: url(../ui/frames/window-app-header-blank.png) 5 repeat;
+    border-image-slice: 19 21 19 21 fill;
+    border-image-width: 19px 21px 21px 21px;
+    border-image-outset: 0px;
+    align-items: center;
+    /*justify-content: flex-end;*/
+    display: inline-flex;
   }
 
   #sidebar-tabs > .item {
@@ -7722,13 +7735,16 @@ hr,
   box-shadow: none !important;
   background: transparent;
   position: absolute;
+  inset:975px 450px 0px 1315px !important;
   border-image: none !important;
 }
+
 
 #destiny-tracker .window-content {
   background: transparent;
   border-image: none !important;
   border:0px !important;
+  box-shadow: none;
 
 }
 
