@@ -2,7 +2,7 @@
   "name": "swffg-UI",
   "title": "SWFFG - UI - Module",
   "description": "Starwars unofficial design - inspired by MooMan design WFRP4e and based on Mandar design",
-  "version": "0.03",
+  "version": "0.04",
   "author": "Prolice",
   "systems": [
       "starwarsffg"
