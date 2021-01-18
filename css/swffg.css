@@ -7742,7 +7742,7 @@ hr,
   box-shadow: none !important;
   background: transparent;
   position: absolute;
-  inset:900px 305px 0px 1315px !important;
+  /*inset:900px 305px 0px 1315px !important;*/
   border-image: none !important;
 }
 
