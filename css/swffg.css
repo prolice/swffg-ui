@@ -832,7 +832,7 @@
     border-image-repeat: repeat;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
-    box-shadow: -2px 0px 8px #000;
+    /* box-shadow: -2px 0px 8px #000; */
   }
   #sidebar.collapsed #sidebar-tabs {
     display: flex;
@@ -7475,13 +7475,20 @@ input[name="dd-import.importPath"] {
 }
 
 
-
-
-
-
-
-
 /** UNIVERSAL MODULE SETTING **/
+#cub-triggler-form form {
+  overflow: hidden;
+  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 	
+}
+#cub-condition-lab form {
+  overflow: hidden;
+  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 
+} 
+
+.active-effect-sheet form {
+  overflow: hidden;
+  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 
+}
 
 .forien-quest-preview h1,
 #forien-quest-log h1,
@@ -7735,7 +7742,7 @@ hr,
   box-shadow: none !important;
   background: transparent;
   position: absolute;
-  inset:975px 450px 0px 1315px !important;
+  inset:900px 305px 0px 1315px !important;
   border-image: none !important;
 }
 
