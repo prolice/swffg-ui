@@ -819,7 +819,7 @@ li.folder > .folder-header h3 {
     top: 0px;
     right: 0px;
     height: 100vh;
-    width: 456px;
+    width: 456px !important;
     margin: 0px;
     padding: 0px;
     background: url(../ui/sidebar.png) !important;
