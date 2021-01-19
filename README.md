@@ -19,21 +19,21 @@ May the the Interface be with you !
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab --> find swffg-ui.
 
-
-
+### Method 2
+Extract the query.zip file to the public/modules directory. Use the `Manage Modules` in your World on the Settings tab of the sidebar on the right and then enable the `swffg - UI - Module` module.
 Once it is installed, just activate it on your world and enjoy !!
 
 
 
-Known issues and advices:
-Do not overrule another UI, there is potential issues of compatibility.
+## Known issues and advices:
+* Do not overrule another UI, there is potential issues of compatibility.
 
 
-Release Notes:
+## Release Notes:
 
-Version [0.1]
-Fixed compatibility with other UI
-Increase the rules over the sidebar display to avoid access problems
+**Version [0.1]**
+* Fixed compatibility with other UI
+* Increase the rules over the sidebar display to avoid access problems
 
-Version [<0.1]
-Build the UI
+**Version [<0.1]**
+* Initial build
