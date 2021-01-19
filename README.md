@@ -12,6 +12,8 @@
 swffg-ui for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
 May the the Interface be with you !
 
+![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/Quick-overview.png)
+
 ## Installation
 ### Method 1
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
