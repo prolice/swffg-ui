@@ -822,11 +822,12 @@ li.folder > .folder-header h3 {
     width: 456px;
     margin: 0px;
     padding: 0px;
-    background: url(../ui/sidebar.png);
-    background-position-y: 45px;
+    background: url(../ui/sidebar.png) !important;
+    background-position-y: 45px !important;
     border-radius: 0px;
     box-shadow: 0 0 0px #000;
     border:none;
+	background-position: 0px !important;
   }
   #sidebar .sidebar-tab {
     flex: 1;
