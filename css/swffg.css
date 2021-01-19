@@ -405,7 +405,18 @@ li.folder > .folder-header h3 {
     --debug-box-shadow-blue: inset 0 0 2px blue;
     --debug-box-shadow-green: inset 0 0 2px green;
   }
+  
+input::placeholder, placeholder, *placeholder {
+    color: #004f4fb8 !important;
+}
+/* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ 
+  /* color: #004f4fb8; */
+  /* opacity: 1; /* Firefox */ 
+/* } */
 
+/* ::-webkit-input-placeholder { /* Edge */ 
+  /* color: #004f4fb8; */
+/* } */
 /* ==================== (F) SCROLLBAR ========================= */
   .app.window-app.sheet.starwarsffg.actor ::-webkit-scrollbar {
     width: 10px;
@@ -543,10 +554,22 @@ li.folder > .folder-header h3 {
     background-size: 9px 110px;
     box-shadow: none;
   }
-
+   .window-app .window-content input::placeholder {
+	   color:#00ffffb8;
+   }
+   
+   .window-app .window-content textarea {
+	   color:#00ffffb8;
+   }
+   
   .app.window-app.form ::-webkit-scrollbar {
     width: 14px;
   }
+  
+  .sheet header.sheet-header h1 input {
+    color:#00ffffb8;
+	font-family:DistantGalaxy;
+   }
   .app.window-app.form ::-webkit-scrollbar-thumb {
     outline: none;
     border-radius: 3px;
@@ -835,6 +858,10 @@ li.folder > .folder-header h3 {
     margin: 0px 0px 0px 80px;
     padding: 0px 0px 0px 0px;
   }
+  
+  #sidebar-tabs > .item {
+    cursor: url(../ui/buttons/cursor-rebel.png), auto;
+}
 
   #sidebar.collapsed {
     width: 50px !important;
@@ -904,7 +931,7 @@ li.folder > .folder-header h3 {
     .sidebar-popout .directory-header .header-search input::placeholder,
       .sidebar-tab .directory-header .header-search input::placeholder {
       text-align: center;
-      color: #000000b8;
+      color: #004f4fb8;
       position: relative;
       top: 2px;
     }
@@ -4429,7 +4456,7 @@ font-family: var(--actor-input-font-family);
       }
 
       #module-management .list-filters input::placeholder {
-        color: #888
+        color: #004f4fb8;
       }
 
       .app.window-app .form-group select {
@@ -5476,7 +5503,7 @@ font-family: var(--actor-input-font-family);
       }
       .window-app.app .sidebar-tab.compendium .compendium-search input::placeholder {
         text-align: center;
-        color: #000000b8;
+        color: #004f4fb8;
         position: relative;
         top: 2px;
       }
@@ -5676,6 +5703,7 @@ font-family: var(--actor-input-font-family);
       flex: 1;
       height: 100%;
       justify-content: space-evenly;
+	  background:none;
     }
     #hotbar #action-bar #macro-list {
       flex: 0 0 540px;
@@ -5687,7 +5715,8 @@ font-family: var(--actor-input-font-family);
       border-radius: 4px;
       justify-content: center;
       background: url(../ui/frames/hotkeybox-macro-list.png);
-      box-shadow: 2px 2px 5px #000000;
+      /* box-shadow: 2px 2px 5px #000000; */
+	  
     }
       #hotbar #action-bar .macro {
         border-image: url(../ui/frames/hotkeybox.png) 21 repeat;
@@ -5695,7 +5724,18 @@ font-family: var(--actor-input-font-family);
         border-image-width: 6px 6px 6px 6px;
         border-image-outset: 0px 0px 0px 0px;
         border-radius: 0px;
-      }   
+		cursor: url(../ui/buttons/cursor-rebel.png), auto;
+      } 
+
+		#hotbar #action-bar .macro:hover {
+		  box-shadow: 2px 2px 5px #00ffff;
+        }
+      
+	  
+	  #hotbar .macro .macro-icon {
+	    cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	  }
+  
         #hotbar .macro .macro-key {
           position: absolute;
           top: 2px;
@@ -5710,10 +5750,11 @@ font-family: var(--actor-input-font-family);
           box-shadow: 0px 0px 5px black;
         }
     #hotbar .bar-controls {
-      background: #000000de;
+      background: #000000a8;
       box-shadow: 0 0 4px black;
       border-radius: 16px;
-      border: 2px solid #540e0ec2;
+      border: 2px solid #00ffff;
+      color: #00efef;
     }
       #hotbar .bar-controls span.page-number {
         display: block;
@@ -6319,6 +6360,7 @@ input.card-edit {
 }
 #hotbar {
   left: 238px;
+  background:none;
 }
 
 .macro-sheet .sheet-header h1 input {
@@ -7818,6 +7860,19 @@ img {
 }
 
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
+
+
+.starwarsffg.sheet.actor .character .header-fields .header-name input {
+    font-family: 'DistantGalaxy';
+}
+
+.starwarsffg.sheet header.sheet-header h1 input {
+    font-family: 'DistantGalaxy';
+}
+
+.journal-sheet form input[name="name"] {
+	font-family: 'DistantGalaxy' !important;
+}
 
 .starwarsffg.sheet.item.v2 .tabs .item,
 .starwarsffg.sheet.actor.v2 .tabs .item,

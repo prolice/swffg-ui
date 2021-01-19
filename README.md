@@ -33,7 +33,13 @@ Once it is installed, just activate it on your world and enjoy !!
 
 ## Release Notes:
 
-**Verson [0.11]**
+**Version [0.12]**
+* Add shadow when mouse hover de hotbar->Macro 
+* Change color of placeholder in window-content like Roll Table Window settings
+* Change font-family to DistantGalaxy
+* Change cursor:pointer to cursor:rebel when hover an item
+
+**Version [0.11]**
 * Increase the visibility of the items in the sidebar menu
 ![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/SidebarMenu.png)
 
