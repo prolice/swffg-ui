@@ -25,11 +25,8 @@ May the the Interface be with you !
 Extract the query.zip file to the public/modules directory. Use the `Manage Modules` in your World on the Settings tab of the sidebar on the right and then enable the `swffg - UI - Module` module.
 Once it is installed, just activate it on your world and enjoy !!
 
-
-
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
-
 
 ## Release Notes:
 
