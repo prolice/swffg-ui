@@ -33,6 +33,10 @@ Once it is installed, just activate it on your world and enjoy !!
 
 ## Release Notes:
 
+**Verson [0.11]**
+* Increase the visibility of the items in the sidebar menu
+![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/SidebarMenu.png)
+
 **Version [0.1]**
 * Fixed compatibility with other UI
 * Increase the rules over the sidebar display to avoid access problems
