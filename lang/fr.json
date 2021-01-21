@@ -1,4 +1,6 @@
 {
   "SWFFG.selectSkin": "Quel est votre destinée ?", 
-  "SWFFG.selectSkinHint": "Changez votre Interface utilisateur selon que vous soyez Rebel ou Empire Galactique."
+  "SWFFG.selectSkinHint": "Changez votre Interface utilisateur selon que vous soyez Rebel ou Empire Galactique.",
+  "SWFFG.options.indicator.choices.0": "Rebel (thème)",
+  "SWFFG.options.indicator.choices.1": "Empire Galactique (thème)"
 }

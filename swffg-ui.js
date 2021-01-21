@@ -1,5 +1,11 @@
 "use strict";
 
+
+const IndicatorMode = {
+    REBEL: 0,
+    GALACTIC: 1,
+};
+
 class swffgUIModule {
     constructor() {
         this.swffgUIModule = new Map();
@@ -22,8 +28,36 @@ class swffgUIModule {
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
             scope: "world",
             config: true,
-            default: true,
-            type: Boolean,
+            default: 0,
+            type: Number,
+			choices: {
+				0: "SWFFG.options.indicator.choices.0",
+				1: "SWFFG.options.indicator.choices.1"
+			},
+			onChange: (value) => {
+				let state = Number(value);
+				var head = document.getElementsByTagName('head')[0];
+				var locationOrigin= document.location.origin;
+				if (state === IndicatorMode.GALACTIC){
+						for(var elem = 0 ; elem < head.children.length; elem++){
+							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
+							    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
+							head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
+							break;
+							}
+						}
+				}
+				else {
+					for(var elem = 0 ; elem < head.children.length; elem++){
+							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
+								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css"){
+							head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
+							break;
+							}
+						}					
+				}
+				
+			}
         });
 
         game.settings.register("swffgUI", "verboseLogs", {
@@ -42,17 +76,17 @@ class swffgUIModule {
 	switchStyleSheet(){
 		var head = document.getElementsByTagName('head')[0];
 		var locationOrigin= document.location.origin;
-		
-		for(var elem = 0 ; elem < head.children.length; elem++)
+		let state = Number(game.settings.get("swffgUI", "selectSkin"));
+				
+		if (state === IndicatorMode.REBEL) {
+			console.log("[SWFFG-UI] Default option is activated");
+			for(var elem = 0 ; elem < head.children.length; elem++)
 			{
 				if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/swffg-default.css"){
 					head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
 					break;
 				}
 			}
-		
-		if (game.settings.get("swffgUI", "selectSkin")) {
-			console.log("[SWFFG-UI] Default option is activated");
 		}
 		else {
 			console.log("[SWFFG-UI] *Dark Side* option is activated");
