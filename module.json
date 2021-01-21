@@ -1,15 +1,15 @@
 {
-  "name": "swffg-UI",
-  "title": "SWFFG - UI",
+  "name": "swffgUI",
+  "title": "SWFFG - User Interface",
   "description": "Starwars unofficial design - 0.12",
   "version": "0.12",
-  "author": "Prolice [prolice#9101]",
+  "author": "Prolice",
   "systems": [
       "starwarsffg"
   ],
-  "styles": ["css/swffg.css"],
+  "styles": ["swffg-default.css"],
   "packs": [],
-  "scripts": [],
+  "scripts": ["./swffg-ui.js"],
   "languages": [
     {
       "lang": "en",
@@ -35,7 +35,6 @@
   "minimumCoreVersion": "0.7.4",
   "compatibleCoreVersion": "0.7.9",
   "url": "https://github.com/prolice/swffg-ui",
-  "bugs": "https://github.com/prolice/swffg-ui/issues",
   "manifest": "https://raw.githubusercontent.com/prolice/swffg-ui/swffg-ui-pre-release/module.json",
   "download": "https://github.com/prolice/swffg-ui/archive/swffg-ui-pre-release0.12.zip"
 }
