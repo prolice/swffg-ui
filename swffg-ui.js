@@ -1,9 +1,17 @@
 "use strict";
 
-
 const IndicatorMode = {
     REBEL: 0,
     GALACTIC: 1,
+};
+
+const IndicatorFonts = {
+	EARTHORBITER: 0,
+	KUIPERBELT: 1,
+	GENESYS: 2,
+	DISTANTGALAXY: 3,
+	SIGNIKA: 4,
+	ROBOTO: 5,
 };
 
 class swffgUIModule {
@@ -42,7 +50,8 @@ class swffgUIModule {
 						for(var elem = 0 ; elem < head.children.length; elem++){
 							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
 							    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
-							head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
+							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
+							head.children[elem].href= "modules/swffgUI/darkside/css/swffg.css";
 							break;
 							}
 						}
@@ -51,12 +60,56 @@ class swffgUIModule {
 					for(var elem = 0 ; elem < head.children.length; elem++){
 							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
 								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css"){
-							head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
+							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
+							head.children[elem].href= "modules/swffgUI/css/swffg.css";
 							break;
 							}
 						}					
 				}
 				
+			}
+        });
+		
+		game.settings.register("swffgUI", "fontSettings", {
+            name: game.i18n.localize("SWFFG.fontSettings"),
+            hint: game.i18n.localize("SWFFG.fontSettingsHint"),
+            scope: "world",
+            config: true,
+            default: 0,
+            type: Number,
+			choices: {
+				0: "SWFFG.options.indicator.fonts.0",
+				1: "SWFFG.options.indicator.fonts.1",
+				2: "SWFFG.options.indicator.fonts.2",
+				3: "SWFFG.options.indicator.fonts.3",
+				4: "SWFFG.options.indicator.fonts.4",
+				5: "SWFFG.options.indicator.fonts.5"
+			},
+			onChange: (value) => {
+				let state = Number(value);
+
+				switch (state){
+					case IndicatorFonts.EARTHORBITER:
+					  document.documentElement.style.setProperty('--major-button-font-family','EarthOrbiter');	
+					  break;
+					case IndicatorFonts.KUIPERBELT:
+					  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
+					  break;
+					case IndicatorFonts.GENESYS:
+					  document.documentElement.style.setProperty('--major-button-font-family','Genesys');	
+					  break;
+					case IndicatorFonts.DISTANTGALAXY:
+					  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
+					  break;
+					case IndicatorFonts.SIGNIKA:
+					  document.documentElement.style.setProperty('--major-button-font-family','Signika');	
+					  break;
+					case IndicatorFonts.ROBOTO:
+					  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
+					  break;
+					default:
+					  console.log('Something went wrong [$value] does not exists in fonts choices');
+				}
 			}
         });
 
@@ -82,8 +135,10 @@ class swffgUIModule {
 			console.log("[SWFFG-UI] Default option is activated");
 			for(var elem = 0 ; elem < head.children.length; elem++)
 			{
-				if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/swffg-default.css"){
-					head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
+				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
+				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css"){
+					//head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
+					head.children[elem].href= "modules/swffgUI/css/swffg.css";
 					break;
 				}
 			}
@@ -93,11 +148,37 @@ class swffgUIModule {
 	
 			for(var elem = 0 ; elem < head.children.length; elem++)
 			{
-				if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
-				  head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
+				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
+				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
+				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
+				  head.children[elem].href= "modules/swffgUI/darkside/css/swffg.css";
 				  break;
 				}
 			}
+		}
+		
+		state = Number(game.settings.get("swffgUI", "fontSettings"));
+		switch (state){
+			case IndicatorFonts.EARTHORBITER:
+			  document.documentElement.style.setProperty('--major-button-font-family','EarthOrbiter');	
+			  break;
+			case IndicatorFonts.KUIPERBELT:
+			  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
+			  break;
+			case IndicatorFonts.GENESYS:
+			  document.documentElement.style.setProperty('--major-button-font-family','Genesys');	
+			  break;
+			case IndicatorFonts.DISTANTGALAXY:
+			  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
+			  break;
+			case IndicatorFonts.SIGNIKA:
+			  document.documentElement.style.setProperty('--major-button-font-family','Signika');	
+			  break;
+			case IndicatorFonts.ROBOTO:
+			  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
+			  break;
+			default:
+			  console.log('Something went wrong [$value] does not exists in fonts choices');
 		}
 		
 	}

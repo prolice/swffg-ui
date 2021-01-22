@@ -35,6 +35,6 @@
   "minimumCoreVersion": "0.7.4",
   "compatibleCoreVersion": "0.7.9",
   "url": "https://github.com/prolice/swffg-ui",
-  "manifest": "https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-test-version0.2/module.json",
+  "manifest": "https://raw.githubusercontent.com/prolice/swffg-ui/swffg-ui-pre-release/module.json",
   "download": "https://github.com/prolice/swffgUI/archive/swff-ui-test-v0.2.zip"
 }
