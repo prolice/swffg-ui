@@ -2,7 +2,7 @@
   "name": "swffgUI",
   "title": "SWFFG - User Interface",
   "description": "Starwars unofficial design - 0.2",
-  "version": "0.2",
+  "version": "0.20",
   "author": "Prolice",
   "systems": [
       "starwarsffg"
