@@ -19,6 +19,10 @@ May the the Interface be with you !
 ![](https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-main/darkside/ui/Screenshot/Quick-overview-empire.png)
 
 ## Installation
+
+###Special notes:
+##*UNINSTALL VERSION BEFORE 0.2*##
+
 ### Method 1
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
 * Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI/swffgUI/module.json
