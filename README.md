@@ -20,7 +20,8 @@ May the the Interface be with you !
 
 ## Installation
 
-###Special notes:
+###Special notes:</br>
+
 <span style="color:red">*UNINSTALL VERSION BEFORE 0.2*</span>
 
 ### Method 1
