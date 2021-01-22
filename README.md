@@ -1,7 +1,7 @@
 
 ## swffg-ui Module
 * **Author**: Prolice#9101
-* **Version**: 0.2
+* **Version**: 0.12
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.4-informational) to ![](https://img.shields.io/badge/Foundry-v0.7.9-informational)
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3)
  
@@ -12,21 +12,12 @@
 swffg-ui for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
 May the the Interface be with you !
 
-**The Rebel UI overview:**
 ![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/Quick-overview.png)
 
-**The Galactic Empire UI**
-![](https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-main/darkside/ui/Screenshot/Quick-overview-empire.png)
-
 ## Installation
-
-###Special notes:</br>
-
-<span style="color:red;">*UNINSTALL VERSION BEFORE 0.2*</span>
-
 ### Method 1
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
-* Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI/swffgUI/module.json
+* Paste the following link: https://raw.githubusercontent.com/prolice/swffg-ui/swffg-ui-pre-release/module.json
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab --> find swffg-ui.
 
@@ -39,16 +30,6 @@ Once it is installed, just activate it on your world and enjoy !!
 
 ## Release Notes:
 
-**Version [0.2]**
-* Add a full new interface on Galatic Empire theme
-* Add Settings entries to switch UI between "Rebels" and "The Empire"
-* Add Settings entries to switch the main display between 6 differents fonts
-* Fix "Roll" button display (on low resolution)
-* Color adapted to a fine lisibility
-* Font Size adapted to a maximal lisibility
-* Minor color and display changes ...
-* Reduce the size of sith.png pause image.
-
 **Version [0.12]**
 * Add shadow when mouse hover de hotbar->Macro 
 * Change color of placeholder in window-content like Roll Table Window settings
@@ -57,6 +38,7 @@ Once it is installed, just activate it on your world and enjoy !!
 
 **Version [0.11]**
 * Increase the visibility of the items in the sidebar menu
+
 ![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/SidebarMenu.png)
 
 **Version [0.1]**
