@@ -16,7 +16,7 @@ May the the Interface be with you !
 ![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/Quick-overview.png)
 
 **The Galactic Empire UI**
-![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/darkside/Screenshot/Quick-overview-empire.png)
+![](https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-main/darkside/ui/Screenshot/Quick-overview-empire.png)
 
 ## Installation
 ### Method 1
