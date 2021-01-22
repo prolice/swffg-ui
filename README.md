@@ -21,7 +21,7 @@ May the the Interface be with you !
 ## Installation
 ### Method 1
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
-* Paste the following link: https://raw.githubusercontent.com/prolice/swffg-ui/swffg-ui-pre-release/module.json
+* Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI/swffgUI/module.json
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab --> find swffg-ui.
 
