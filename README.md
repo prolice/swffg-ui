@@ -19,16 +19,11 @@ May the the Interface be with you !
 ![](https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-main/darkside/ui/Screenshot/Quick-overview-empire.png)
 
 ## Installation
-
-### Method 1
+### Method
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
 * Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI/swffgUI/module.json
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab --> find swffg-ui.
-
-### Method 2
-Extract the query.zip file to the public/modules directory. Use the `Manage Modules` in your World on the Settings tab of the sidebar on the right and then enable the `swffg - UI - Module` module.
-Once it is installed, just activate it on your world and enjoy !!
 
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
