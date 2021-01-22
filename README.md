@@ -21,7 +21,7 @@ May the the Interface be with you !
 ## Installation
 
 ###Special notes:
-##*UNINSTALL VERSION BEFORE 0.2*##
+<span style="color:red">*UNINSTALL VERSION BEFORE 0.2*</span>
 
 ### Method 1
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
