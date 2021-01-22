@@ -1,7 +1,7 @@
 
 ## swffg-ui Module
 * **Author**: Prolice#9101
-* **Version**: 0.12
+* **Version**: 0.2
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.4-informational) to ![](https://img.shields.io/badge/Foundry-v0.7.9-informational)
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3)
  
@@ -12,7 +12,11 @@
 swffg-ui for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
 May the the Interface be with you !
 
+**The Rebel UI overview:**
 ![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/Screenshot/Quick-overview.png)
+
+**The Galactic Empire UI**
+![](https://raw.githubusercontent.com/prolice/swffg-ui/main/ui/darkside/Screenshot/Quick-overview-empire.png)
 
 ## Installation
 ### Method 1
@@ -29,6 +33,16 @@ Once it is installed, just activate it on your world and enjoy !!
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+
+**Version [0.2]**
+* Add a full new interface on Galatic Empire theme
+* Add Settings entries to switch UI between "Rebels" and "The Empire"
+* Add Settings entries to switch the main display between 6 differents fonts
+* Fix "Roll" button display (on low resolution)
+* Color adapted to a fine lisibility
+* Font Size adapted to a maximal lisibility
+* Minor color and display changes ...
+* Reduce the size of sith.png pause image.
 
 **Version [0.12]**
 * Add shadow when mouse hover de hotbar->Macro 

@@ -364,6 +364,7 @@ li.folder > .folder-header h3 {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
+	font-size: 20px;
   }
 
 /* ==================== (E) GLOBAL CSS VARIABLES ============== */
@@ -371,15 +372,16 @@ li.folder > .folder-header h3 {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
     --window-header-title-font-family: DistantGalaxy;
     --window-header-title-font-size: 17px;
+	--window-header-vehicle-font-size: xx-large;
     --window-header-title-font-weight: normal;
     --window-header-title-color: #f5f5f5;
 
-    --major-button-font-family: EarthOrbiter;
+    --major-button-font-family: KuiperBelt;
     --major-button-font-size: 20px;
     --major-button-font-weight: normal;
     --major-button-color: #dadada;
 
-    --tab-header-font-family: KuiperBelt;
+    --tab-header-font-family: EarthOrbiter;
     --tab-header-font-size: 18px;
     --tab-header-font-weight: 700;
     --tab-header-color: #ffffff;
@@ -395,7 +397,12 @@ li.folder > .folder-header h3 {
     --actor-label-font-size: 22px;
     --actor-label-font-weight: 700;
     --actor-label-color: #1400ffc4;
-
+    
+	--actor-competence-font-family: KuiperBelt;
+    --actor-competence-font-size: 16px;
+    --actor-competence-font-weight: 700;
+    --actor-competence-color: #1400ffc4;
+	
   /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
     --debug-background-color-red: #ff000054;
     --debug-background-color-blue: #1d00ff54;
@@ -567,8 +574,9 @@ input::placeholder, placeholder, *placeholder {
   }
   
   .sheet header.sheet-header h1 input {
-    color:#00ffffb8;
-	font-family:DistantGalaxy;
+    color:#005f5fb8;
+	font-family:var(--window-header-title-font-family) !important;
+	font-size: var(--window-header-vehicle-font-size);
    }
   .app.window-app.form ::-webkit-scrollbar-thumb {
     outline: none;
@@ -842,7 +850,7 @@ input::placeholder, placeholder, *placeholder {
     top: 0px;
     right: 0px;
     height: 100vh;
-    width: 456px !important;
+    width: 452px !important;
     margin: 0px;
     padding: 0px;
     background: url(../ui/sidebar.png) !important;
@@ -1398,7 +1406,7 @@ input::placeholder, placeholder, *placeholder {
     }
 
     #sidebar .sidebar-tab #chat-controls .roll-type-select {
-      font-family: EarthOrbiter;
+      font-family: var(--major-button-font-family);
       font-weight: 500;
       font-size: 16px;
       margin-right: 20px;
@@ -4370,8 +4378,8 @@ font-family: var(--actor-input-font-family);
     border: 1px solid blue;
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
-    border-image-slice: 10 13 13 13;
-    border-image-width: 10px 13px 13px 13px;
+    border-image-slice: 10 10 10 10;
+    border-image-width: 10px 10px 10px 10px;
     border-image-outset: 0px;
     height: fit-content;
     max-height: none;
@@ -4439,7 +4447,7 @@ font-family: var(--actor-input-font-family);
         padding: 1px 3px;
         margin: 0;
         font-family: var(--actor-input-font-family);
-        font-size: var(--actor-input-font-size);
+        font-size: var(--actor-input-font-size) !important;;
         font-weight: var(--actor-input-font-weight);
         color: #d6d6d6;
         border: 1px solid #736953a6;
@@ -7242,7 +7250,7 @@ input[name="dd-import.importPath"] {
     flex-wrap: wrap;
     justify-content: flex-start;
     background: rgb(0,0,0,0.2);
-    font-family: 'EarthOrbiter';
+    font-family: var(--major-button-font-family);
 }
 
 #mass-combat.mass-combat .window-content {
@@ -8054,7 +8062,7 @@ img {
 }
 
 .pure-g [class*=pure-u] {
-    font-family: "EarthOrbiter", sans-serif !important;
-	font-size : 12px;
+    font-family: var(--major-button-font-family), sans-serif !important;
+	font-size : var(--actor-competence-font-size);
 }
 
