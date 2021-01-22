@@ -25,6 +25,14 @@ May the the Interface be with you !
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab --> find swffg-ui.
 
+###Update
+* Update the module in **Add-On Modules** tab.
+* Uninstall the old version [<=0.12]
+
+![](https://raw.githubusercontent.com/prolice/swffgUI/swffg-ui-main/ui/Screenshot/delete-the-old-version.png)
+
+
+
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
 
