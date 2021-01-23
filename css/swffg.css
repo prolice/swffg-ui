@@ -119,8 +119,7 @@
     outline: none;
   }
 .window-app {
-  font-family: "EarthOrbiter", sans-serif;
-  
+  font-family: var(--tab-header-font-family), sans-serif;
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
