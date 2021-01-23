@@ -1,8 +1,8 @@
 {
   "name": "swffgUI",
   "title": "SWFFG - User Interface",
-  "description": "Starwars unofficial design - 0.2.1",
-  "version": "0.2.1",
+  "description": "Starwars unofficial design - 0.2.2",
+  "version": "0.2.2",
   "author": "Prolice",
   "systems": [
       "starwarsffg"
