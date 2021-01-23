@@ -38,6 +38,13 @@ May the the Interface be with you !
 
 ## Release Notes:
 
+**Version [0.2.1]**
+* Add "Mons" font to replace "Genesys" as an option in the settings
+* Window border wrong slice fix (minors) (several)
+* Fix Calendar-Weather css to apply the skin
+* Add pink color for toggle item for control-tool bar
+* Fix error in Rebel css on EarthOrbiter font --> variable was not set everywhere
+ 
 **Version [0.2]**
 * Add a full new interface on Galatic Empire theme
 * Add Settings entries to switch UI between "Rebels" and "The Empire"
