@@ -91,6 +91,52 @@
     fill: #ffffff;
 }
 
+
+ :root {
+  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
+    --window-header-title-font-family: DistantGalaxy;
+    --window-header-title-font-size: 17px;
+	--window-header-vehicle-font-size: xx-large;
+    --window-header-title-font-weight: normal;
+    --window-header-title-color: #f5f5f5;
+
+    --major-button-font-family: KuiperBelt;
+    --major-button-font-size: 20px;
+    --major-button-font-weight: normal;
+    --major-button-color: #dadada;
+
+    --tab-header-font-family: EarthOrbiter;
+    --tab-header-font-size: 18px;
+    --tab-header-font-weight: 700;
+    --tab-header-color: #ffffff;
+    --tab-header-color-active: #1febff;
+
+    --actor-input-font-family: KuiperBelt;
+    --actor-input-font-size: 16px;
+	--chatform-input-font-size: 20px;
+    --actor-input-font-weight: 500;
+    --actor-input-color: #000000;
+	
+    --actor-label-font-family: KuiperBelt;
+    --actor-label-font-size: 22px;
+    --actor-label-font-weight: 700;
+    --actor-label-color: #1400ffc4;
+    
+	--actor-competence-font-family: KuiperBelt;
+    --actor-competence-font-size: 16px;
+    --actor-competence-font-weight: 700;
+    --actor-competence-color: #1400ffc4;
+	
+  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
+    --debug-background-color-red: #ff000054;
+    --debug-background-color-blue: #1d00ff54;
+    --debug-background-color-green: #54ff0054;
+
+    --debug-box-shadow-red: inset 0 0 2px red;
+    --debug-box-shadow-blue: inset 0 0 2px blue;
+    --debug-box-shadow-green: inset 0 0 2px green;
+  }
+
 /******************************************************************/
 /*=============== II. GENERAL USER INTERFACE =====================*/
 /******************************************************************/
@@ -371,50 +417,7 @@ li.folder > .folder-header h3 {
   }
 
 /* ==================== (E) GLOBAL CSS VARIABLES ============== */
-  :root {
-  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
-    --window-header-title-font-family: DistantGalaxy;
-    --window-header-title-font-size: 17px;
-	--window-header-vehicle-font-size: xx-large;
-    --window-header-title-font-weight: normal;
-    --window-header-title-color: #f5f5f5;
-
-    --major-button-font-family: KuiperBelt;
-    --major-button-font-size: 20px;
-    --major-button-font-weight: normal;
-    --major-button-color: #dadada;
-
-    --tab-header-font-family: EarthOrbiter;
-    --tab-header-font-size: 18px;
-    --tab-header-font-weight: 700;
-    --tab-header-color: #ffffff;
-    --tab-header-color-active: #1febff;
-
-    --actor-input-font-family: KuiperBelt;
-    --actor-input-font-size: 16px;
-	--chatform-input-font-size: 20px;
-    --actor-input-font-weight: 500;
-    --actor-input-color: #000000;
-	
-    --actor-label-font-family: KuiperBelt;
-    --actor-label-font-size: 22px;
-    --actor-label-font-weight: 700;
-    --actor-label-color: #1400ffc4;
-    
-	--actor-competence-font-family: KuiperBelt;
-    --actor-competence-font-size: 16px;
-    --actor-competence-font-weight: 700;
-    --actor-competence-color: #1400ffc4;
-	
-  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
-    --debug-background-color-red: #ff000054;
-    --debug-background-color-blue: #1d00ff54;
-    --debug-background-color-green: #54ff0054;
-
-    --debug-box-shadow-red: inset 0 0 2px red;
-    --debug-box-shadow-blue: inset 0 0 2px blue;
-    --debug-box-shadow-green: inset 0 0 2px green;
-  }
+ 
   
 input::placeholder, placeholder, *placeholder {
     color: #004f4fb8 !important;
