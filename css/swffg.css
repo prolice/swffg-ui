@@ -1,4 +1,5 @@
 /******************************************************************/
+/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -32,10 +33,11 @@
 /******************************************************************/
 
   /* ==================== (A) STAR JEDI ==================== */
+
 @font-face {
   font-family: "Mons";
   src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
-} 
+}
 
 @font-face {
   font-family: "EarthOrbiter";
@@ -165,7 +167,8 @@
     outline: none;
   }
 .window-app {
-  font-family: var(--tab-header-font-family), sans-serif;
+  font-family: var(--major-button-font-family), sans-serif;
+  
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
