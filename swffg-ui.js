@@ -8,7 +8,7 @@ const IndicatorMode = {
 const IndicatorFonts = {
 	EARTHORBITER: 0,
 	KUIPERBELT: 1,
-	GENESYS: 2,
+	MONS: 2,
 	DISTANTGALAXY: 3,
 	SIGNIKA: 4,
 	ROBOTO: 5,
@@ -95,8 +95,8 @@ class swffgUIModule {
 					case IndicatorFonts.KUIPERBELT:
 					  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
 					  break;
-					case IndicatorFonts.GENESYS:
-					  document.documentElement.style.setProperty('--major-button-font-family','Genesys');	
+					case IndicatorFonts.MONS:
+					  document.documentElement.style.setProperty('--major-button-font-family','Mons');	
 					  break;
 					case IndicatorFonts.DISTANTGALAXY:
 					  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
@@ -165,8 +165,8 @@ class swffgUIModule {
 			case IndicatorFonts.KUIPERBELT:
 			  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
 			  break;
-			case IndicatorFonts.GENESYS:
-			  document.documentElement.style.setProperty('--major-button-font-family','Genesys');	
+			case IndicatorFonts.MONS:
+			  document.documentElement.style.setProperty('--major-button-font-family','Mons');	
 			  break;
 			case IndicatorFonts.DISTANTGALAXY:
 			  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
