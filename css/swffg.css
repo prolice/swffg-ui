@@ -105,7 +105,7 @@
     --major-button-font-weight: normal;
     --major-button-color: #dadada;
 
-    --tab-header-font-family: EarthOrbiter;
+    --tab-header-font-family: KuiperBelt;
     --tab-header-font-size: 18px;
     --tab-header-font-weight: 700;
     --tab-header-color: #ffffff;
@@ -7953,3 +7953,4 @@ img {
     cursor: not-allowed;
     background: #290a0aba;
 }
+
