@@ -1,7 +1,7 @@
 
 ## swffg-ui Module
 * **Author**: Prolice#9101
-* **Version**: 0.2
+* **Version**: 0.2.3
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.4-informational) to ![](https://img.shields.io/badge/Foundry-v0.7.9-informational)
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3)
  
@@ -37,6 +37,9 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+
+**Version [0.2.3]**
+* add Scrollbar in roll form window
 **Version [0.2.2]**
 * Fix UI Rebel changing font
 
