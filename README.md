@@ -37,6 +37,8 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+**Version [0.2.2]**
+* Fix UI Rebel changing font
 
 **Version [0.2.1]**
 * Add "Mons" font to replace "Genesys" as an option in the settings

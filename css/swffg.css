@@ -1,4 +1,5 @@
 /******************************************************************/
+/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -32,10 +33,11 @@
 /******************************************************************/
 
   /* ==================== (A) STAR JEDI ==================== */
+
 @font-face {
   font-family: "Mons";
   src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
-} 
+}
 
 @font-face {
   font-family: "EarthOrbiter";
@@ -105,7 +107,7 @@
     --major-button-font-weight: normal;
     --major-button-color: #dadada;
 
-    --tab-header-font-family: EarthOrbiter;
+    --tab-header-font-family: KuiperBelt;
     --tab-header-font-size: 18px;
     --tab-header-font-weight: 700;
     --tab-header-color: #ffffff;
@@ -165,7 +167,8 @@
     outline: none;
   }
 .window-app {
-  font-family: var(--tab-header-font-family), sans-serif;
+  font-family: var(--major-button-font-family), sans-serif;
+  
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
@@ -572,7 +575,7 @@ input::placeholder, placeholder, *placeholder {
    }
    
    .window-app .window-content textarea {
-	   color:#00ffffb8;
+	   color:#006d6db8;
    }
    
   .app.window-app.form ::-webkit-scrollbar {
@@ -7953,3 +7956,4 @@ img {
     cursor: not-allowed;
     background: #290a0aba;
 }
+
