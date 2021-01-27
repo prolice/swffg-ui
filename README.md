@@ -37,9 +37,12 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+**Version [0.2.4]**
+* fix scroll only display for roll window
 
 **Version [0.2.3]**
 * add Scrollbar in roll form window
+
 **Version [0.2.2]**
 * Fix UI Rebel changing font
 
