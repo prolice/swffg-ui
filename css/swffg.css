@@ -7752,6 +7752,11 @@ img {
 }
 
 .starwarsffg form {
+  overflow: hidden;
+  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
+}
+
+.starwarsffg.roll-builder-dialog form {
   overflow: scroll;
   background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
 }
