@@ -7749,7 +7749,7 @@ img {
 }
 
 .starwarsffg form {
-  overflow: hidden;
+  overflow: scroll;
   background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
 }
 
